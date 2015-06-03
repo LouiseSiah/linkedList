@@ -104,7 +104,7 @@ void test_addList_add_99_element_head_and_tail_should_point_to_the_different_ele
 	int firstValue = 1, 
       maxValue   = 100,
       lastValue  = maxValue - 1,
-       value;
+      value;
 		
 	list = createLinkedList();	
 	
