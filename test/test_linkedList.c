@@ -14,7 +14,7 @@ void tearDown(void)
 }
 
 void test_createLinkedList_should_return_0() //Head and tail should point to NULL at the first,
-{											// when there has no any list element to point to.	
+{                                            // when there has no any list element to point to.	
   struct linkedList *list;
   list = createLinkedList();
   TEST_ASSERT_EQUAL(0,list->head);
@@ -23,8 +23,8 @@ void test_createLinkedList_should_return_0() //Head and tail should point to NUL
 }
 
 void test_createListElement_put_1_in_elemnt_should_return_the_value_1()
-{											//To make sure the list element
-  struct listElement *element;			// had function well.
+{                                   //To make sure the list element
+  struct listElement *element;      // had function well.
   element = createListElement(1);
   TEST_ASSERT_EQUAL(1,element->value);
 }

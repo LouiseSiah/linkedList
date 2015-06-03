@@ -12,7 +12,7 @@
 * 	
 * Return:
 *	list: A new link list that the head pointer and tail pointer 
-*			was pointing to NULL at the first.
+*       was pointing to NULL at the first.
 *
 */
 

@@ -4,8 +4,8 @@
 
 struct linkedList
 {
-	struct listElement *head;
-	struct listElement *tail;
+  struct listElement *head;
+  struct listElement *tail;
 };
 
 struct linkedList *createLinkedList();

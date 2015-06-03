@@ -3,8 +3,8 @@
 
 struct listElement
 {
-	struct listElement *next ;
-	int    value;
+  struct listElement *next ;
+  int    value;
 };
 
 struct listElement *createListElement(int value);
