@@ -15,7 +15,7 @@ void tearDown(void)
 
 void test_createLinkedList_should_return_0() //Head and tail should point to NULL at the first,
 {											// when there has no any list element to point to.	
-	struct linkedList *list;
+  struct linkedList *list;
 	list = createLinkedList();
 	TEST_ASSERT_EQUAL(0,list->head);
 	TEST_ASSERT_EQUAL(0,list->tail);
