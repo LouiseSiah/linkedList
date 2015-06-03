@@ -9,7 +9,7 @@
 *
 * The structure of a list element:
 *	struct listElement *next :  Pointer used to link with 
-*							                another list element.
+*                             another list element.
 *	int value                :   Value to be stored.
 * 	
 *
