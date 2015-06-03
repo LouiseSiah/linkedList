@@ -32,9 +32,10 @@ void test_createListElement_put_1_in_elemnt_should_return_the_value_1()
 void test_addList_add_one_element_head_and_tail_should_point_to_the_only_element()
 {
 	struct linkedList *list;
-	list = createLinkedList();
-	struct listElement *element;
+  struct listElement *element;
 	int value1 = 1;
+	
+  list = createLinkedList();
 	element = createListElement(value1);
 	addList(element, list);
 	TEST_ASSERT_EQUAL(value1,list->head->value);
@@ -45,8 +46,9 @@ void test_addList_add_one_element_head_and_tail_should_point_to_the_only_element
 void test_addList_add_one_alpha_head_and_tail_should_give_the_code_of_alpha()
 {
 	struct linkedList *list;
+  struct listElement *element;
+    
 	list = createLinkedList();
-	struct listElement *element;
 	element = createListElement('a');
 	addList(element, list);
 	TEST_ASSERT_EQUAL('a',list->head->value);
@@ -57,10 +59,11 @@ void test_addList_add_one_alpha_head_and_tail_should_give_the_code_of_alpha()
 void test_addList_add_two_element_head_and_tail_should_point_to_the_different_elements()
 {
 	struct linkedList *list;
-	list = createLinkedList();
-	struct listElement *element;
+  struct listElement *element;
 	int value1 = 1,
-		value2 = 2;
+      value2 = 2;
+    
+	list = createLinkedList();
 	element = createListElement(value1);
 	addList(element, list);
 	element = createListElement(value2);
@@ -75,11 +78,12 @@ void test_addList_add_two_element_head_and_tail_should_point_to_the_different_el
 void test_addList_add_three_element_head_and_tail_should_point_to_the_different_elements()
 {
 	struct linkedList *list;
-	list = createLinkedList();
 	struct listElement *element;
 	int value1 = 1,
-		value2 = 2,
-		value3 = 3;
+      value2 = 2,
+      value3 = 3;
+    
+  list = createLinkedList();
 	element = createListElement(value1);
 	addList(element, list);
 	element = createListElement(value2);
@@ -98,9 +102,9 @@ void test_addList_add_99_element_head_and_tail_should_point_to_the_different_ele
 	struct listElement *element;
 	
 	int firstValue = 1, 
-		maxValue   = 100,
-		lastValue  = maxValue - 1,
-		value;
+      maxValue   = 100,
+      lastValue  = maxValue - 1,
+       value;
 		
 	list = createLinkedList();	
 	
